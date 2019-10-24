@@ -27,7 +27,7 @@ BLYNK_FORCE_INLINE
 void BlynkApi<Proto>::sendInfo()
 {
     static const char profile[] BLYNK_PROGMEM = "blnkinf\0"
-        BLYNK_PARAM_KV("ver"    , BLYNK_VERSION)
+        BLYNK_PARAM_KV("ver"    , BOARD_FIRMWARE_VERSION)
         BLYNK_PARAM_KV("h-beat" , BLYNK_TOSTRING(BLYNK_HEARTBEAT))
         BLYNK_PARAM_KV("buff-in", BLYNK_TOSTRING(BLYNK_MAX_READBYTES))
 #ifdef BLYNK_INFO_DEVICE
